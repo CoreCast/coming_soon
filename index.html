@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoreCast - Coming Soon</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0e4d92, #122c59);
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .logo img {
+      width: 150px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .countdown {
+      font-size: 1.5rem;
+      background: #ffffff;
+      color: #122c59;
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-bottom: 30px;
+    }
+
+    .subscribe {
+      margin-top: 20px;
+    }
+
+    .subscribe input[type="email"] {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    .subscribe button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background: #0e4d92;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+    .subscribe button:hover {
+      background: #092a47;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="core-cast-logo.png" alt="CoreCast Logo">
+    </div>
+    <h1>CoreCast is Coming Soon!</h1>
+    <p>Shape your odds. Predict the future. The decentralized prediction market powered by Core DAO is on its way!</p>
+    <div class="countdown">
+      Launching in: <span id="timer">30 days</span>
+    </div>
+    <div class="subscribe">
+      <p>Stay updated:</p>
+      <input type="email" placeholder="Enter your email">
+      <button>Notify Me</button>
+    </div>
+  </div>
+  <footer>
+    © 2024 CoreCast. All rights reserved.
+  </footer>
+  <script>
+    // Placeholder countdown logic
+    const timer = document.getElementById("timer");
+    let days = 30;
+    setInterval(() => {
+      if (days > 0) {
+        days--;
+        timer.textContent = `${days} days`;
+      }
+    }, 86400000); // Decrement every 24 hours
+  </script>
+</body>
+</html>

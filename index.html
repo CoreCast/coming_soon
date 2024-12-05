@@ -36,8 +36,8 @@
       margin-bottom: 30px;
     }
 
-    .countdown {
-      font-size: 1.5rem;
+    .coming-soon {
+      font-size: 1.8rem;
       background: #ffffff;
       color: #122c59;
       display: inline-block;
@@ -46,27 +46,22 @@
       margin-bottom: 30px;
     }
 
-    .subscribe {
+    .social {
       margin-top: 20px;
     }
 
-    .subscribe input[type="email"] {
-      padding: 10px;
-      border: none;
-      border-radius: 5px;
-      margin-right: 10px;
-    }
-
-    .subscribe button {
+    .social a {
+      display: inline-block;
       padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
       background: #0e4d92;
       color: #ffffff;
-      cursor: pointer;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
     }
 
-    .subscribe button:hover {
+    .social a:hover {
       background: #092a47;
     }
 
@@ -87,28 +82,16 @@
     </div>
     <h1>CoreCast is Coming Soon!</h1>
     <p>Shape your odds. Predict the future. The decentralized prediction market powered by Core DAO is on its way!</p>
-    <div class="countdown">
-      Launching in: <span id="timer">30 days</span>
+    <div class="coming-soon">
+      Coming Soon
     </div>
-    <div class="subscribe">
-      <p>Stay updated:</p>
-      <input type="email" placeholder="Enter your email">
-      <button>Notify Me</button>
+    <div class="social">
+      <p>Follow us for updates:</p>
+      <a href="https://twitter.com/corecastpredict" target="_blank">Follow @corecastpredict</a>
     </div>
   </div>
   <footer>
     © 2024 CoreCast. All rights reserved.
   </footer>
-  <script>
-    // Placeholder countdown logic
-    const timer = document.getElementById("timer");
-    let days = 30;
-    setInterval(() => {
-      if (days > 0) {
-        days--;
-        timer.textContent = `${days} days`;
-      }
-    }, 86400000); // Decrement every 24 hours
-  </script>
 </body>
 </html>
